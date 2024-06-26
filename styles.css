@@ -1,0 +1,32 @@
+body{
+    background-color: #89FC00;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: justify;
+}
+
+h1,h2{
+    font-family: "Averia Sans Libre";
+    margin:20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin:40px;
+}
+
+.box{
+    text-align: center;
+    background-color: #EFF9F0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding:10 40px;
+    width: 60vw;
+    height: 60vh;
+    max-width: 50vw;
+    max-height: 60vh;
+    margin: 50px;
+  }
+
+p{
+    font-style: italic;
+}
