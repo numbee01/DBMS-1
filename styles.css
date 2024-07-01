@@ -1,32 +1,97 @@
-body{
-    background-color: #89FC00;
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    text-align: justify;
+body {
+    background-color: #ff5353;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    user-select: none;
 }
 
-h1,h2{
-    font-family: "Averia Sans Libre";
-    margin:20px;
-    font-size: 40px;
-    font-weight: bold;
-    margin:40px;
-}
-
-.box{
+#landing {
     text-align: center;
-    background-color: #EFF9F0;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #FAFF7F 100%, #F4F1BB 50%);
+    color: #333;
+}
+
+#landing h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+#landing p {
+    font-size: 1.2em;
+    margin: 0 0 20px;
+}
+
+.btn {
+    background-color: #ED6A5A;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #bf5749;
+}
+
+#day3, #day4 {
+    padding: 50px 20px;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.note-card {
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding:10 40px;
-    width: 60vw;
-    height: 60vh;
-    max-width: 50vw;
-    max-height: 60vh;
-    margin: 50px;
-  }
+    padding: 20px;
+    width: calc(33% - 40px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-p{
-    font-style: italic;
+.note-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4a4e69;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a4e69;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#scroll-to-top:hover {
+    background-color: #6d6875;
+}
+
+img{
+    object-fit: cover;
+    width: calc(33% - 40px);
+    padding: 20px;
 }
